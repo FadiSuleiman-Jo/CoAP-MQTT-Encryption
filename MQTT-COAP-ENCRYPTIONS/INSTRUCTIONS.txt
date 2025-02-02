@@ -1,0 +1,14 @@
+For both CoAP and MQTT, change the boot.py for every combination you want to run so that the SSID and password are for the wifi you want the ESP32 (flashed microcontroller) to connect to
+
+For both CoAP and MQTT, dont forget to change the sender and receiver IP addresses to resemble the sender and server IP addresses on the network.
+
+For CoAP, Micropython does not have a built-in library. When you want to run any cipher with CoAP, you have to have all the CoAP files flashed on micropython with the cipher for it to run correctly
+
+MQTT has a build-in library in Micropython so their code files are lesser
+
+If you want the flashed microcontroller to have a specific, static IP address when it connects the wifi, make the changes in the boot.py file so that the process is automatic.
+
+Any .py file that has "cipher" sender or "cipher" receiver is meant to be tested on a PC or desktop with python3. If you attempt to run them on micropython, they will not work.
+You can exclude the sender and receiver files from ESP32 as they are PC only.
+
+Finally, for MQTT, run the mqtt_broker.py code on a PC or desktop before testing the sender and receiver files or before testing any MQTT codes because MQTT does not work without a broker
