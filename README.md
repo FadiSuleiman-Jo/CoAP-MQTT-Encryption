@@ -1,4 +1,4 @@
-This project was made to benchmark and record results for a scholarly letter targetted to IEEE. The project specifically targets ESP32 IoT microcontroller along with any other flashed microcontroller that uses Micropython.
+This project was made to benchmark and record results for a scholarly letter targetted to IEEE. The letter is title "Evaluating Lightweight Encryption Schemes in MQTT and CoAP IoT Protocols". The project specifically targets ESP32 IoT microcontroller along with any other flashed microcontroller that uses Micropython.
 
 The project contains 10 combinations of ciphers and communication protocols for evaluation and benchmarking purposes. There are 5 ciphers by 2 communication protocols:
 
